@@ -107,11 +107,11 @@ ruleTester.run('no-undef-class', rule, {
       `,
     }),
     /*
-       using parent selector (`&`)
+       using parent selector extensions (`&_selectorExtension`)
      */
     test({
       code: `
-        import s from './parentSelector1.scss';
+        import s from './parentSelectorExtension1.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -122,7 +122,7 @@ ruleTester.run('no-undef-class', rule, {
     }),
     test({
       code: `
-        import s from './parentSelector2.scss';
+        import s from './parentSelectorExtension2.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -134,7 +134,7 @@ ruleTester.run('no-undef-class', rule, {
     }),
     test({
       code: `
-        import s from './parentSelector3.scss';
+        import s from './parentSelectorExtension3.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -146,7 +146,7 @@ ruleTester.run('no-undef-class', rule, {
     }),
     test({
       code: `
-        import s from './parentSelector4.scss';
+        import s from './parentSelectorExtension4.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -158,7 +158,7 @@ ruleTester.run('no-undef-class', rule, {
     }),
     test({
       code: `
-        import s from './parentSelector5.scss';
+        import s from './parentSelectorExtension5.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -170,7 +170,7 @@ ruleTester.run('no-undef-class', rule, {
     }),
     test({
       code: `
-        import s from './parentSelector6.scss';
+        import s from './parentSelectorExtension6.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -182,7 +182,7 @@ ruleTester.run('no-undef-class', rule, {
     }),
     test({
       code: `
-        import s from './parentSelector8.scss';
+        import s from './parentSelectorExtension8.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -448,11 +448,11 @@ ruleTester.run('no-undef-class', rule, {
       ],
     }),
     /*
-       using parent selector (`&`)
+       using parent selector extensions (`&_selectorExtension`)
      */
     test({
       code: `
-        import s from './parentSelector1.scss';
+        import s from './parentSelectorExtension1.scss';
 
         export default Foo = () => (
           <div className={s.foo}>

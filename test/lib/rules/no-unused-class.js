@@ -85,12 +85,12 @@ ruleTester.run('no-unused-class', rule, {
       `,
     }),
     /*
-       check if classes are ignored if they only
-       exist for nesting parent selectors (`&`)
+       check if classes are ignored if they only exist for nesting
+       parent selector extensions (`&_selectorExtension`)
      */
     test({
       code: `
-        import s from './parentSelector7.scss';
+        import s from './parentSelectorExtension7.scss';
 
         export default Foo = () => (
           <div>
@@ -295,7 +295,7 @@ ruleTester.run('no-unused-class', rule, {
      */
     test({
       code: `
-        import s from './parentSelector4.scss';
+        import s from './parentSelectorExtension4.scss';
 
         export default Foo = () => (
           <div className={s.foo}>
@@ -309,7 +309,7 @@ ruleTester.run('no-unused-class', rule, {
     }),
     test({
       code: `
-        import s from './parentSelector8.scss';
+        import s from './parentSelectorExtension8.scss';
 
         export default Foo = () => (
           <div className={s.foo} />
